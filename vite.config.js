@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import fs from 'fs'
+import FullReload from 'vite-plugin-full-reload';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,5 +11,5 @@ export default defineConfig({
       cert: fs.readFileSync('./.cert/cert.pem'),
     },
   },
-  plugins: [react()],
-})
+  plugins: [react(), FullReload(['config/routes.rb', 'app/views/**/*'])],
+});

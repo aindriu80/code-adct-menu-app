@@ -71,5 +71,13 @@ const menu = [
     img: './images/item-9.jpeg',
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  {
+    id: 10,
+    title: 'dinner example',
+    category: 'dinner',
+    price: 16.99,
+    img: './images/item-9.jpeg',
+    desc: `Testing whether the app updates dynamically when a new item is entered `,
+  },
 ];
 export default menu;
